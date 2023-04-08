@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/problem_new_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+
+
+        <TextView
+            android:id="@+id/problem_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="What are you working on today?" />
+
+        <EditText
+            android:id="@+id/problem_ask"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:elevation="2dp"
+            android:hint="tell me about your specific homework problem"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="What do you need help with?" />
+
+        <EditText
+            android:id="@+id/help_description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:elevation="2dp"
+            android:hint="Describe why you need help, what is your question about the homework?"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/button_get_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="get help button"
+                android:elevation="20dp"
+                android:text="Get Help" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
